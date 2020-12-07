@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
     home:{
         flex:1,
         alignItems:"center",
+        
     },
 greeting: {
     paddingTop:15
@@ -35,7 +36,7 @@ currentTime:{
 furtherScroll:{
     flex:1,
     flexDirection:"row",
-    backgroundColor:'#223c5f',
+    backgroundColor:'#41689b',
     alignItems:"center",
     height:160,
 },
@@ -48,7 +49,7 @@ furtherForcastTime:{
 },
 upcomingItem:{
     flexDirection:"row",
-    backgroundColor:'#223C5F',
+    backgroundColor:'#41689b',
     width:width-10,
     padding:10,
     alignItems:"center",
@@ -69,6 +70,25 @@ upcomingforecastDesc:{
 upcomingForecastText:{
     color:'#fff',
     fontSize:20,
+},
+aboutHeading:{
+    fontSize:30,
+    fontWeight:"bold",
+    color:"#e3927f",
+    padding:20
+},
+aboutDesc:{
+    fontSize:18,
+    color:"#223c5f",
+    padding:10
+},
+githubImg:{
+    width:100,
+    height:100,
+},
+weatherIcon:{
+    width:121,
+    height:121,
 }
 
 })
