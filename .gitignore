@@ -60,3 +60,4 @@ buck-out/
 
 #weatherApiKey
 src/config.js
+src/configs.js
