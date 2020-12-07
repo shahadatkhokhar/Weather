@@ -10,6 +10,7 @@ import {
 } from 'react-native'
 import styles from './styles'
 import Geolocation from '@react-native-community/geolocation';
+import weatherApiKey from './configs'
 
 let weekday = new Array(7);
       weekday[0] = "Sunday";
@@ -544,6 +545,7 @@ let data =[
   }
 ]
 let currentTime, chours,cminutes,cformattedTime,ctemp
+let apiKey = weatherApiKey
 
 class HomeScreen extends Component{
     state={
@@ -576,7 +578,7 @@ class HomeScreen extends Component{
             let lo= info.coords.longitude.toPrecision(4)
             this.setState({lat:la})
             this.setState({lon:lo})
-            this.setState({url:`https://api.openweathermap.org/data/2.5/onecall?lat=${this.state.lat}&lon=${this.state.lon}&exclude=minutely,alerts&units=metric&appid=1a9e2579ceb961c112414636be8e86ca`})
+            this.setState({url:`https://api.openweathermap.org/data/2.5/onecall?lat=${this.state.lat}&lon=${this.state.lon}&exclude=minutely,alerts&units=metric&appid=${apiKey}`})
             fetch(this.state.url)
             .then(response => response.json())
             .then(results=> {
