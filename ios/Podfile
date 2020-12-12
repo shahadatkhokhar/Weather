@@ -12,6 +12,10 @@ target 'Weather' do
 
   pod 'react-native-geolocation', :path => '../node_modules/@react-native-community/geolocation'
 
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
+  pod 'react-native-settings', :path => '../node_modules/react-native-settings'
+
   target 'WeatherTests' do
     inherit! :complete
     # Pods for testing

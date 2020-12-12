@@ -14,10 +14,7 @@ const AboutScreen=() =>{
         <Text style={styles.aboutHeading}>Weather</Text>
       </View>
       <View>
-      <Text style={styles.aboutDesc}>Author : Shahadat Khokhar</Text>
-      </View>
-      <View>
-      <Text style={{...styles.aboutDesc,paddingTop:10}}>Api Used: OpenWeather Api</Text>
+      <Text style={styles.aboutDesc}>BY : Shahadat Khokhar</Text>
       </View>
       <View>
       <Text style={{...styles.aboutDesc, paddingTop:15}}>For queries and suggestions contact: </Text>

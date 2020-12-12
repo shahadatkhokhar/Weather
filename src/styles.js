@@ -2,13 +2,16 @@ import {StyleSheet,Dimensions} from'react-native'
 
 const width=Dimensions.get('window').width
 const styles = StyleSheet.create({
-    home:{
-        flex:1,
-        alignItems:"center",
-        
-    },
+home:{
+    flex:1,
+    alignItems:"center",
+    backgroundColor:'#ebebeb'   
+},
 greeting: {
     paddingTop:15
+},
+currentWeatherImg:{
+    backgroundColor:'#ebebeb'
 },
 greetingText:{
     paddingTop:20,
@@ -89,7 +92,13 @@ githubImg:{
 weatherIcon:{
     width:121,
     height:121,
-}
+},
+locationPrompt:{
+    backgroundColor:'#223c5f',
+    padding:15,
+    borderRadius:30
+},
+
 
 })
 
